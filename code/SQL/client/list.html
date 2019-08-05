@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表详情</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .top {
+            width: 100%;
+            height: 80px;
+        }
+
+        .div1 {
+            width: 100%;
+            height: 32px;
+        }
+
+        .div-1 {
+            width: 1200px;
+            height: 32px;
+            margin: auto;
+            background-color: #f2f2f2;
+        }
+
+        .span1 {
+            font-size: 12px;
+            line-height: 32px;
+        }
+
+        .span1-1 {
+            color: #EA3778;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .div-1 .dl1 {
+            font-size: 12px;
+            width: 100px;
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .div-1 .dl1 dt {
+            width: 100%;
+            height: 100%;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .div-1 .dl1 dd {
+            width: 100px;
+            height: 30px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .div-1 .dl1:hover {
+            background: #fff;
+        }
+
+        .div-1 .dl1 div {
+            width: 80px;
+            height: 50px;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 32px;
+        }
+
+        .dl1:hover div {
+            display: block;
+        }
+
+        .div2 {
+            width: 1200px;
+            height: 95px;
+            margin: auto;
+            display: flex;
+            background: #fff;
+        }
+
+        .div2-1 {
+            padding-top: 20px;
+        }
+
+        .div2-1-1 {}
+
+        .div2-2 {
+            width: 450px;
+            height: 35px;
+            background: #EC317D;
+            margin: 25px 0 0 200px;
+        }
+
+        input {
+            width: 340px;
+            height: 25px;
+            margin-left: 2px;
+            margin-top: 0px;
+
+        }
+
+        button {
+            width: 99px;
+            height: 35px;
+            background: #EE1169;
+            border: 1px solid #EE1169;
+            color: #fff;
+            font-size: 15px
+        }
+
+        .div2-2-1 a {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 15px;
+            border-right: 1px solid #ccc;
+            font-size: 12px;
+            text-align: center;
+            color: #887782;
+
+        }
+
+        .div3 {
+            width: 100%;
+            height: 36px;
+            background: #fff;
+        }
+
+        #a2 {
+            display: block;
+            width: 120px;
+            height: 100%;
+            float: left;
+        }
+
+        .div3-1 {
+            width: 1200px;
+            height: 36PX;
+            margin: auto;
+        }
+
+        .list1 {
+            margin-left: 250px;
+            display: flex;
+        }
+
+        .list1 .span-1 {
+            display: inline-block;
+            width: 20px;
+            height: 100%;
+            text-align: right;
+            color: #EEEEEE;
+        }
+
+        .list1 li {
+            line-height: 36px;
+            margin-right: 20px;
+        }
+
+        .list1 li a {
+            color: #000;
+        }
+
+        .div4 {
+            position: absolute;
+            left: 60px;
+            top: 125px;
+            z-index: 88;
+        }
+
+        .div4-1 {
+            width: 162px;
+            height: 30px;
+            line-height: 30px;
+            margin: auto;
+
+        }
+
+        .list2 li {
+            position: relative;
+            line-height: 53px;
+            width: 193px;
+            height: 35px;
+            background: #FA3778;
+            color: #fff;
+            padding-top: 10px;
+            border-bottom: 1px dotted #fff;
+        }
+
+        .list2 .span3 {
+            margin-left: 16px;
+            margin-right: 10px;
+        }
+
+        .list2 .li1 {
+
+            margin-top: 0;
+            width: 193px;
+            height: 28px;
+            line-height: 10px;
+            background: #333333;
+            color: #fff;
+        }
+
+        .list2 .span4 {
+            margin: 5px 10px -3px 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url(../images/pc_categorym-01.png.);
+            background-position: 25px 30px;
+
+        }
+
+        .div4-2 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 193px;
+            line-height: 20px;
+            background-color: #fff;
+            display: none;
+        }
+
+        .list2 li:hover .div4-2 {
+            display: block;
+            border: 1px solid #FA3778
+        }
+
+        .div4-2 .dl2 {
+            color: #000;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .div4-2 .dl2 dt {
+            width: 100%;
+            height: 20px;
+            font-size: 16px;
+        }
+
+        .div4-2 .dl2 dt a {
+            color: #000;
+        }
+
+        .div4-2 .dl2 dd {
+            float: left;
+            font-size: 12px;
+            height: 20px;
+            margin-right: 15px;
+        }
+
+        .list2 li:hover {
+            background-color: #fff;
+            color: #FA3778
+        }
+
+        .list2 li:hover .span4 {
+            color: #FA3778
+        }
+
+
+        #app {
+            width: 1130px;
+            margin: 0 auto;
+            background: #eee;
+            padding-left: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            justify-content: space-between;
+        }
+
+
+        .page .active {
+            background: #CCC
+        }
+
+        .page a:active {
+            opacity: .8
+        }
+
+        #nav {
+            width: 1130px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            /* background: #999; */
+            padding-left: 15px;
+            border: 1px solid #000;
+        }
+
+        #nav li {
+            float: left;
+            width: 200px;
+        }
+
+        .app-1 {
+            width: 253px;
+            height: 482px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+
+        .app-1 img {
+            width: 253px;
+            height: 253px;
+        }
+
+        .sale-price {
+            width: 258px;
+            height: 48px;
+            float: right;
+        }
+
+        .arrivals-info {
+            width: 253px;
+            height: 132px;
+        }
+
+        .div7 {
+            width: 233px;
+            height: 112px;
+            padding: 10px
+        }
+
+        .span6 {
+            font-size: 20px;
+            color: #ec3e7d;
+            ;
+        }
+
+        del {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .span7 {
+            margin-left: 70px;
+            color: #c69a62;
+            font-size: 14px
+        }
+
+        .yew {
+            color: #ee9c23;
+            font-size: 14px;
+            ;
+        }
+
+        .div7 a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .p1 {
+            margin-bottom: 25px;
+            font-size: 14px
+        }
+
+        .p3 {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            text-align: center;
+            background: #ee9c23;
+            color: #fff;
+            border-radius: 10%;
+        }
+        #pic img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div-1">
+            <span class="span1">欢迎光临莎莎网！ <span class="span1-1">登录</span> 或 <span class="span1-1">注册</span> </span>
+            <div class="right">
+                <dl class="dl1">
+                    <dt>我的账户</dt>
+                    <div>
+                        <dd><a href="" id="a1">我的订单</a></dd>
+                        <dd><a href="" id="a1">我的订单</a></dd>
+                        <dd><a href="" id="a1">我的订单</a></dd>
+                    </div>
+                </dl>
+                <dl class="dl1">
+                    <dt>我的购物车</dt>
+                </dl>
+                <dl class="dl1">
+                    <dt>我的收藏</dt>
+                </dl>
+                <dl class="dl1">
+                    <dt>我的站内信</dt>
+                </dl>
+                <dl class="dl1">
+                    <dt>积分中心</dt>
+                </dl>
+                <dl class="dl1">
+                    <dt>Global site</dt>
+                </dl>
+                <dl class="dl1">
+                    <dt>关注我们</dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="div2-1">
+            <div class="div2-1-1">
+                <a href="http://www.sasa.com/index.html" target="_blank">
+                    <img src="http://cn02alicdn.sasa.com/public/images/aa/8d/1f/eaeed01271e12415fe463de41c4c09d9dcdc6139.png?1550670401#w"
+                        alt="欢迎光临莎莎网" width="170" height="42">
+                </a>
+            </div>
+        </div>
+        <div class="div2-2">
+            <div class="div2-2-1">
+                <input type="text" placeholder="防晒">
+                <button>搜索</button>
+            </div>
+            <div class="div2-2-1">
+                <a href="">面膜</a>
+                <a href="">欧莱雅</a>
+                <a href="">SK-ll</a>
+                <a href="">口红</a>
+                <a href="">安耐晒</a>
+                <a href="">香水</a>
+                <a href="" style="border-right: none;">雅诗兰黛</a>
+            </div>
+        </div>
+    </div>
+    <div class="div3">
+        <div class="div3-1">
+            <ul class="list1">
+                <li><a href="">香港特快直送</a><span class="span-1">/</span></li>
+                <li><a href="">闪电保税仓</a><span class="span-1">/</span></li>
+                <li><a href="">限时特卖</a><span class="span-1">/</span></li>
+                <li><a href="">贵宾专享</a><span class="span-1">/</span></li>
+                <li><a href="">莎莎Outlet</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div4">
+        <ul class="list2">
+            <li class="li1" style="border-bottom: none;"><span class="span3">☰ </span> 全部分类</li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>面部护肤</div>
+                <div class="div4-2">
+                    <dl class="dl2">
+                        <dt><a href="">洁面/磨砂</a> </dt>
+                        <dd><a href="">泡沫洁面乳</a> </dd>
+                        <dd><a href="">洁面摩丝</a> </dd>
+                        <dd><a href="">洁面啫喱</a> </dd>
+                        <dd><a href="">洁面奶</a> </dd>
+                        <dd><a href="">洁面皂</a> </dd>
+                        <dd><a href="">洁面粉</a> </dd>
+                        <dd><a href="">磨砂膏</a> </dd>
+                        <dd><a href="">磨砂啫喱</a> </dd>
+                    </dl>
+                    <dl class="dl2">
+                        <dt><a href="">眼部/唇部/颈部护理</a> </dt>
+                        <dd><a href="">眼霜</a> </dd>
+                        <dd><a href="">眼部精化/疗程</a> </dd>
+                        <dd><a href="">眼膜</a> </dd>
+                        <dd><a href="">睡眠免洗式眼膜</a> </dd>
+                        <dd><a href="">润唇膏</a> </dd>
+                        <dd><a href="">唇部精化</a> </dd>
+                        <dd><a href="">唇膜</a> </dd>
+                        <dd><a href="">唇部磨砂</a> </dd>
+                        <dd><a href="">颈霜</a> </dd>
+                        <dd><a href="">颈精华</a> </dd>
+                        <dd><a href="">颈膜颈膜</a> </dd>
+                    </dl>
+                    <dl class="dl2">
+                        <dt><a href="">面膜</a> </dt>
+                        <dd><a href="">面膜贴</a> </dd>
+                        <dd><a href="">水洗式面膜</a> </dd>
+                        <dd><a href="">睡眠面膜</a> </dd>
+                        <dd><a href="">面膜粉</a> </dd>
+                        <dd><a href="">面膜泥</a> </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>彩妆</div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>香水</div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>健康美肌</div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>纤体美胸</div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>个人护理</div>
+            </li>
+            <li>
+                <div class="div4-1"><span class="span4"></span>男士专区</div>
+            </li>
+            <li style="border-bottom: none;">
+                <div class="div4-1"><span class="span4"></span>孕婴护理</div>
+            </li>
+        </ul>
+    </div>
+    <div id="pic"><img src="../images/bg_01.jpg" alt=""></div>
+    <div id="nav">
+        <li>默认排序</li>
+        <li>售价排序(从高到低)</li>
+        <li>售价排序(从低到高)</li>
+    </div>
+    <div id="app">
+        <!-- <div class="app-1">
+            <img src="../images/25.jpg" alt="">
+            <div class="div1">
+                <span class="span1">¥119</span><del>¥119</del><span class="span2">8折</span>
+            </div>
+            <div class="div2">
+                <b class="yew">香港特快直送 零扣关 包税</b>
+                <a href="">RAFRA</a>
+                <p class="p1">香橙碳酸洁面慕斯</p>
+                <p class="p2">150克</p>
+                <p class="p3">直降</p>
+            </div>
+        </div> -->
+    </div>
+    <div id="page" class="page"> </div>
+    <script src="./jquery-3.4.1.js"></script>
+    <script src="./list.js"></script>
+</body>
+
+</html>
