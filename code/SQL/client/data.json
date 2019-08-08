@@ -8,7 +8,22 @@
         "name1": "RAFRA",
         "price": "香橙碳酸洁面慕斯",
         "pri": " 150克 ",
-        "btn": "直降 "
+        "btn": "直降 ",
+        "small1": "../SQL/images/small-xcts1.jpg",
+        "small2": "../SQL/images/small-xcts2.jpg",
+        "small3": "../SQL/images/small-xcts3.jpg",
+        "small4": "../SQL/images/small-xcts4.jpg",
+        "small5": "../SQL/images/small-xcts5.jpg",
+        "middle1": "../SQL/images/middle-xcts1.jpg",
+        "middle2": "../SQL/images/middle-xcts2.jpg",
+        "middle3": "../SQL/images/middle-xcts3.jpg",
+        "middle4": "../SQL/images/middle-xcts4.jpg",
+        "middle5": "../SQL/images/middle-xcts5.jpg",
+        "big1": "../SQL/images/big-xcts1.jpg",
+        "big2": "../SQL/images/big-xcts2.jpg",
+        "big3": "../SQL/images/big-xcts3.jpg",
+        "big4": "../SQL/images/big-xcts4.jpg",
+        "big5": "../SQL/images/big-xcts5.jpg"
     },
     {
         "src": "http://cn04alicdn.sasa.com/public/images/41/86/0b/774f808671e0aa72c374cb4ff6ea8e64be2e5a3f.jpg?1554354754#h",

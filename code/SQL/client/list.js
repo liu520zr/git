@@ -13,7 +13,7 @@ $(function () {
                 var res = response.data.map(ele => {
                     return `
                     <div class="app-1">
-            <img src="${ele.src}" alt="">
+            <a href="http://127.0.0.1/code/ssw/git/code/html/datalist.html?id=${ele.gid}"><img src="${ele.src}" alt=""></a>
             <div class="div6">
                 <span class="span6">${ele.hd1}</span><del>${ele.hd2}</del><span class="span7">${ele.hd}</span>
             </div>

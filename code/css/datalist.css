@@ -1,0 +1,627 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .div1 {
+            width: 100%;
+            height: 32px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .div4-1-2-1 {
+            width: 1200px;
+            height: 32px;
+            margin: auto;
+            background-color: #f2f2f2;
+        }
+
+        .span1 {
+            font-size: 12px;
+            line-height: 32px;
+        }
+
+        .span1-1 {
+            color: #EA3778;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .div4-1-2-1 .dl1 {
+            font-size: 12px;
+            width: 100px;
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .div4-1-2-1 .dl1 dt {
+            width: 100%;
+            height: 100%;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .div4-1-2-1 .dl1 dd {
+            width: 100px;
+            height: 30px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .div4-1-2-1 .dl1:hover {
+            background: #fff;
+        }
+
+        .div4-1-2-1 .dl1 div {
+            width: 80px;
+            height: 50px;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 32px;
+        }
+
+        .dl1:hover div {
+            display: block;
+        }
+
+        .div2 {
+            width: 1200px;
+            height: 95px;
+            margin: auto;
+            display: flex;
+            background: #fff;
+        }
+
+        .div2-1 {
+            padding-top: 20px;
+        }
+
+        .div2-2 {
+            width: 450px;
+            height: 35px;
+            background: #EC317D;
+            margin: 25px 0 0 200px;
+        }
+
+        input {
+            width: 340px;
+            height: 25px;
+            margin-left: 2px;
+            margin-top: 0px;
+
+        }
+
+        button {
+            width: 99px;
+            height: 35px;
+            background: #EE1169;
+            border: 1px solid #EE1169;
+            color: #fff;
+            font-size: 15px
+        }
+
+        .div2-2-1 a {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 15px;
+            border-right: 1px solid #ccc;
+            font-size: 12px;
+            text-align: center;
+            color: #887782;
+
+        }
+
+        .div3 {
+            width: 100%;
+            height: 36px;
+            background: #fff;
+        }
+
+        #a2 {
+            display: block;
+            width: 120px;
+            height: 100%;
+            float: left;
+        }
+
+        .div3-1 {
+            width: 1200px;
+            height: 36PX;
+            margin: auto;
+        }
+
+        .list1 {
+            margin-left: 250px;
+            display: flex;
+        }
+
+        .list1 .span-1 {
+            display: inline-block;
+            width: 20px;
+            height: 100%;
+            text-align: right;
+            color: #EEEEEE;
+        }
+
+        .list1 li {
+            line-height: 36px;
+            margin-right: 20px;
+        }
+
+        .list1 li a {
+            color: #000;
+        }
+
+        .div4 {
+            position: absolute;
+            left: 50px;
+            top: 135px;
+        }
+        .list-li{
+            display: none;
+        }
+        .div4-1{
+            width: 150px;
+            height: 30px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .div4:hover .list-li{
+            display: block;
+        }
+        .list-li li{
+            width: 150px;
+            height:40px;
+            background: #EA3778;
+            color: #fff;
+            text-align: center;
+            border-bottom: 1px double #fff;
+        }
+        li:hover .div4-2{
+            display: block;
+        }
+        .div4-2{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            left: 150px;
+            top: 30px;
+            border: 1px solid #EA3778;
+            display: none;
+        }
+        .div4-2 .dl2{
+            width: 100%;
+            height: 70px;
+            margin-top: 15px;
+        }
+        .div4-2 .dl2 dt{
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            color: #000;
+            text-align: left;
+        }
+        .div4-2 .dl2 dd{
+            margin-right: 15px;
+            height: 20px;
+            font-size: 12px;
+            float: left;
+            color: #ccc;
+        }
+        .div5{
+            width: 100%;
+            height: 40px;
+            background: #EBEBEB;
+            line-height: 40px;
+
+        }
+        .bread-crumbs{
+            width: 1200px;
+            margin: auto;
+           
+        }
+        .div5 a{
+            font-size: 14px;
+            float: left;
+            color: #888888;
+            
+        }
+        .div5 .now{
+            font-size: 14px;
+            float: left;
+            color: #ccc;
+        }
+       .content{
+           width: 100%;
+           margin-top: 10px;
+       }
+        #box {
+            width: 500px;
+            height: 452px;
+        }
+        
+        #large-box {
+            width: 400px;
+            height: 450px;
+            float: left;
+            overflow: hidden;
+            position: absolute;
+            display: none;
+            margin-top: 80px;
+            left: 550px;
+        }
+        
+        #large-box img {
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 500px;
+            z-index: 99;
+        }
+        
+        
+        #middle-box {
+            width: 450px;
+            height: 450px;
+            border: 1px solid #ccc;
+            top: 80px;
+            position: relative;
+            left: 50px;
+            float: left;
+        }
+        #middle-box img{
+            width: 450px;
+            height: 450px;
+        }
+        #shadow {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        #small-box {
+            width: 450px;
+            height: 80px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+            position: absolute;
+            top: 750px;
+            left: 0;
+        }
+        
+        #small-box img {
+            width: 54px;
+            height: 54px;
+            padding: 10px;
+        }
+        
+        .current {
+            border: 1px solid #25f;
+        }
+        .div7{
+            width: 570px;
+            height: 843px;
+            float: right;
+            position: absolute;
+            top: 285px;left: 550px;
+            font-size: 20px;
+        }
+        .div-1 i{
+            font-size: 15px;
+            color: #fff;
+            background: #EC3E7C;
+            margin-right: 5px;
+            display: inline-block;
+            border-radius: 2px;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 5px;
+            position: relative;
+            top: 2px;
+        }
+        .div-1 a{
+            color: #000;
+            font-size: 20px
+        }
+        .detailwords {
+            margin-top: 20px;
+        }
+        .detailwords {
+            clear: both;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .detailwords a {
+            float: left;
+            border: 1px solid #c69a62;
+            border-radius: 15px;
+            padding: 2px 10px 0;
+            margin-right: 8px;
+            display: block;
+            color: #c69a62;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .product-concerns {
+            position: relative;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+        .product-concerns li {
+            clear: both;
+            padding: 5px 0;
+        }
+        .product-information .detail {
+            height: 24px;
+            color: #888888;
+            padding-left: 5px;
+        }
+        .price {
+            font-size: 35px;
+            line-height: 1.2;
+            text-decoration: none;
+            color: #ec3e7d;
+            margin-right: 10px;
+        }
+        .old-price{
+            font-size: 16px;
+            color: #ccc;
+        }
+        b {
+            font-weight: bold;
+        }
+        .syew {
+            color: #cb9966;
+        }
+        .f16 {
+            font-size: 16px;
+        }
+        .div8{
+            border-bottom: 1px solid #ccc;
+        }
+        .div-2{
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .div-2 i{
+            height: 20px;
+            background: #71D2C3;
+            font-size: 14px;
+            padding: 2px;
+            border-radius: 3px;
+            color: #fff;
+
+        }
+        .ruleWrap {
+            padding: 18px 0 14px;
+            border-top: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            margin-bottom: 5px;
+        }
+        .dispatching {
+            font-size: 14px;
+            color: #333;
+        }
+        .dispatching li{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .dispatching li .one {
+            width: 50px;
+            letter-spacing: 5px;
+            color: #959595;
+        }
+        .dispatching li>div {
+            display: inline-block;
+            position: relative;
+        }
+        .dispatching .pulldown {
+            position: relative;
+        }
+        .dispatching .hid {
+            display: none;
+        }
+        .product-buy {
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+        .product-buy-quantity {
+            margin-bottom: 20px;
+        }
+        label {
+            cursor: default;
+        }
+        .product-buy-quantity .p-quantity {
+            width: 74px;
+        }
+        .product-buy-quantity .p-quantity a {
+            display: inline-block;
+            width: 20px;
+            height: 21px;
+            overflow: hidden;
+            vertical-align: middle;
+            border: 1px solid #f2f2f2;
+            text-align: center;
+            font: 14px/22px simsun,serif;
+            background: #f2f2f1;
+            font-weight: bold;
+        }
+        .product-buy-quantity .p-quantity input {
+            width: 30px;
+            height: 21px;
+            line-height: 21px;
+            padding: 0;
+            margin: 0;
+            vertical-align: middle;
+            border-width: 1px 0;
+            border-style: solid;
+            border-color: #f2f2f2;
+            text-align: center;
+        }
+        .product-buy-quantity .p-quantity a {
+            display: inline-block;
+            width: 20px;
+            height: 21px;
+            overflow: hidden;
+            vertical-align: middle;
+            border: 1px solid #f2f2f2;
+            text-align: center;
+            font: 14px/22px simsun,serif;
+            background: #f2f2f1;
+            font-weight: bold;
+        }
+        .product-buy-action {
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        .product-buy-action .btn-major {
+            margin-right: 15px;
+            width: 220px;
+            height: 50px;
+            background: #ec3e7d;
+            line-height: 50px;
+            overflow: hidden;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .product-information .pop-wrapper {
+            position: relative;
+        }
+        /* .code-pro {
+            border: 1px solid #dedede;
+            padding: 15px 18px;
+            color: #999999;
+        } */
+        /* .product-buy .pop-wrapper .action-handle {
+            margin-right: 0;
+            padding: 3px 5px;
+            border: 1px solid white;
+            border-top-width: 0;
+        }
+        .product-buy .pop-wrapper .pop-body {
+            left: 0;
+            bottom: 46px;
+            padding: 1px;
+        } */
+
+        /* .div4{
+    position:absolute;
+    left: 30px;top:130px;
+    z-index: 88;
+}
+.div4-1{
+    width: 162px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+   
+}
+.list2 .span3{
+    margin-left: 16px ;
+    margin-right: 10px ;
+}
+.list2 .li1{
+    
+    margin-top: 0;
+    width: 193px;
+    height: 36px;
+    line-height:30px;
+    background: #333333;
+    color: #fff;
+}
+.li:hover li{
+    display: block;
+}
+.list2 li{
+  position: relative;
+    line-height: 25px;
+    width: 193px;
+    height: 53px;
+    background: #FA3778;
+    color: #fff;
+    padding-top: 10px;
+    border-bottom: 1px dotted #fff;
+    display: none;
+}
+.list2 .span4{
+    margin: 5px 10px -3px 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/pc_categorym-01.png.);
+    background-position:25px 30px;
+
+}
+.div4-2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 193px;
+    line-height: 20px;
+    background-color: #fff;
+    display: none;
+}
+.list2 li:hover .div4-2{
+    display: block;
+    border: 1px solid #FA3778
+}
+.div4-2 .dl2{
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.div4-2 .dl2 dt{
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+}
+.div4-2 .dl2 dt a{
+    color: #000;
+}
+.div4-2 .dl2 dd{
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    margin-right: 15px;
+}
+.list2 li:hover{
+    background-color: #fff;
+    color: #FA3778
+}
+.list2 li:hover .span4{
+    color: #FA3778
+} */

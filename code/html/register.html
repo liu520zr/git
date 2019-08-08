@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录</title>
+    <title>注册</title>
     <style>
         * {
             margin: 0;
@@ -125,23 +125,38 @@
             font-size: 21px;
             margin-left: 30px;
         }
-        .top .span9{
+
+        .top .span9 {
             font-size: 12px;
             margin-left: 100px;
         }
-        .top .span9 a{
+
+        .top .span9 a {
             color: #EA3778;
         }
 
-        .list8 {
+        .list8 li {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .list8 li input {
             width: 356px;
             height: 36px;
-            margin-bottom: 25px;
         }
+
+        .list8 li p {
+            margin-left: 33px;
+            text-align: left;
+            font-size: 14px;
+            display: none;
+        }
+
+        .error {
+            display: block !important;
+            color: red;
+        }
+
         .list8 .li3 {
             width: 350px;
             height: 36px;
@@ -151,27 +166,30 @@
             text-align: left;
             display: flex;
         }
-        .list8 .li3 input{
-            display: inline-block; 
+
+        .list8 .li3 input {
+            display: inline-block;
             width: 100px;
-            height:36px;
+            height: 36px;
             margin: 0;
             /* float: left; */
-            
+
         }
-        .list8 .li3 img{
+
+        .list8 .li3 img {
             width: 80px;
             height: 36px;
             display: inline-block;
         }
-        .list8 .li3 .span10{
+
+        .list8 .li3 .span10 {
             display: inline-block;
             width: 120px;
             height: 25px;
             /* position: absolute;
-            top: 0;
-            margin-top: 0; */
-           
+                top: 0;
+                margin-top: 0; */
+
         }
 
         .list8 .li4 input {
@@ -182,7 +200,7 @@
 
         .list8 .li4 {
             font-size: 14px;
-            margin-left: -200px;
+            margin-left: -45px;
         }
 
         .list8 .li4 a {
@@ -196,7 +214,19 @@
             margin-bottom: 25px;
             background: #EA3778;
             color: #fff;
-            border:1px solid #EA3778;
+            border: 1px solid #EA3778;
+            font-size: 16px
+        }
+
+        .list8 .li6 input {
+            width: 15px;
+            height: 15px;
+            margin-right: 15px;
+            margin-left: -55px;
+        }
+
+        .list8 .li6 {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -204,8 +234,8 @@
 <body>
     <div class="div1">
         <div class="div-1">
-            <span class="span1">欢迎光临莎莎网！ <a href="./log.html"><span class="span1-1">登录</span></a> 或 <a href="./register.html"><span
-                        class="span1-1">注册</span></a> </span>
+            <span class="span1">欢迎光临莎莎网！ <a href="./log.html"><span class="span1-1">登录</span></a> 或 <a
+                    href="./register.html"><span class="span1-1">注册</span></a> </span>
             <div class="right">
                 <dl class="dl1">
                     <dt>我的账户</dt>
@@ -241,28 +271,40 @@
             <img src="../images/26.png" alt="">
         </div>
         <div class="div2-2">
-            <img src="../images/30.PNG" alt="" class="pic">
+            <img src="../images/28.jpg" alt="" class="pic">
             <div class="div2-2-1">
                 <div class="top">
-                    用户登入<span class="span9">还没有莎莎账号？<a href="./register.html">立即注册</a></span>
+                    用户注册<span class="span9">已有莎莎网账号？<a href="./log.html">立即登入</a></span>
                 </div>
                 <ul class="list8">
-                    <li><input type="text" placeholder="邮箱/手机" maxlength="11" id="phone"></li>
-                    <li><input type="text" placeholder="填写密码" maxlength="16" id="password"></li>
+                    <li>
+                        <input type="text" placeholder="请输入11位手机号码" id="phoneID" maxlength="11">
+                        <p>请输入11位手机号码</p>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="请输入密码6~16位字母和数字的组合" id="passwordA" maxlength="16">
+                        <p>请输入密码,6~16位字母和数字</p>
+                    </li>
+                    <li><input type="text" placeholder="再次填写密码" id="passwordB" maxlength="16">
+                        <p>!密码与确认密码不相符，请重新填写</p>
+                    </li>
                     <li class="li3">
-                        <input type="text" placeholder="填写图片验证码" maxlength="4">
-                        <img src="../images/27.png" alt="">
+                        <input type="text" placeholder="填写图片验证码" id="imageCode" maxlength="4">
+                        <canvas width="100" height="45" id="captcha"></canvas>
+                        <!-- <img src="../images/27.png" alt=""> -->
                         <span class="span10">看不清，换一张</span>
                     </li>
-                    <li class="li4"><input type="checkbox">记住我 <a href="">忘记密码</a></li>
-                    <li class="li5"><button id="loginBtn">登入</button></li>
+                    <li class="li4"><input type="checkbox" id="protocol"><label for="protocol">你已阅读并同意</label> <a
+                            href="">使用条款</a> 及 <a href="">隐私政策</a></li>
+                    <li class="li6"><input type="checkbox">我不同意莎莎使用我的个人资料作直接促销</li>
+                    <li class="li5"><button id="registerBtn">注册</button></li>
                 </ul>
             </div>
         </div>
     </div>
-
 </body>
 <script src="../js/jquery-3.4.1.js"></script>
 <script src="../js/captcha.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/register.js"></script>
+
 </html>
