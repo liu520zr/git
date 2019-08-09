@@ -2,6 +2,7 @@
 window.onload = function () {
 
     let gid = decodeURI(location.search).slice(1);
+    let itemData;
     console.log(gid);
     $.ajax({
         type: "post",
@@ -10,9 +11,10 @@ window.onload = function () {
         dataType: "json",
         success: function (str) {
             console.log(str);
-
+            itemData = str[0];
             let html = str.map(ele => {
                 return `
+               
                 <div class="div1">
         <div class="div4-1-2-1">
             <span class="span1">欢迎光临莎莎网！ <a href="./log.html"><span class="span1-1">登录</span></a> 或 <a
@@ -271,6 +273,10 @@ window.onload = function () {
 
         </div>
     </div>
+    <div class="cart-list">
+    <h4>购物车</h4>
+    <span id="catShow">0</span>
+</div>
                 `;
 
             })
@@ -364,6 +370,35 @@ window.onload = function () {
         }
     });
 
+    /* 加入购物车的功能 */
+    $("body").on("click", ".btn-major", function () {
+        // console.log(itemData);
+        var index = $(this).parent().data("index");
+        var goodid = itemData.gid;
+        var price = itemData.pri;
+        console.log(goodid);
 
+        $.ajax({
+            type: "get",
+            url: "../MyCart/server/addCart.php",
+            data: `goodid=${goodid}&price=${price}`,
+            dataType: "json",
+            success: function (response) {
+                // console.log(response);
+                var text = response["totalRow"];
+                $("#catShow").html(text)
 
+            }
+        });
+
+    })
+
+    /* 给购物车按钮添加点击事件 */
+    // $(".cart-list").click(function() {
+    //     window.open("../jiaoben/index.html")
+    // });
+
+    $("body").on("click", ".cart-list", function () {
+        window.open("../html/index.html")
+    })
 }

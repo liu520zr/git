@@ -12,10 +12,10 @@ if($typeOrder == 0)
   $sql = "SELECT * FROM `list` order by `gid` limit $page , 20";
 }else if($typeOrder == 1)
 {
-  $sql = "SELECT * FROM `list` ORDER BY `list`.`hd` DESC limit $page , 20";
+  $sql = "SELECT * FROM `list` ORDER BY `list`.`hd1` DESC limit $page , 20";
 }else if($typeOrder == 2)
 {
-  $sql = "SELECT * FROM `list` ORDER BY `list`.`hd` ASC limit $page , 20";
+  $sql = "SELECT * FROM `list` ORDER BY `list`.`hd1` ASC limit $page , 20";
 }
 
 

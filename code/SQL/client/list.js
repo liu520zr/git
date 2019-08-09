@@ -15,7 +15,7 @@ $(function () {
                     <div class="app-1">
             <a href="http://127.0.0.1/code/ssw/git/code/html/datalist.html?id=${ele.gid}"><img src="${ele.src}" alt=""></a>
             <div class="div6">
-                <span class="span6">${ele.hd1}</span><del>${ele.hd2}</del><span class="span7">${ele.hd}</span>
+                <span class="span6">¥${ele.hd1}</span><del>¥${ele.hd2}</del><span class="span7">${ele.hd}</span>
             </div>
             <div class="div7">
                 <b class="yew">${ele.name}</b>

@@ -19,7 +19,7 @@ $(function () {
             success: function (response) {
                 console.log(response);
                 alert(response.msg);
-                window.location.href="../html.ssw.html";
+                window.location.href="../html/ssw.html";
             }
         });
     })
